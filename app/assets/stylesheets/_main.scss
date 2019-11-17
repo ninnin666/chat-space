@@ -1,0 +1,88 @@
+a {
+text-decoration: none;
+}
+.chat-main{
+  width: calc(100vw - 300px);
+  float: left;
+}
+.main-header{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #eee;
+}
+.header__left-box {
+  margin-top: 35px;
+}
+.main-header__left-box__current-group h2{
+font-size: 20px;
+color: #333;
+margin-bottom: 15px;
+}
+.main-header__left-box__member-list ul{
+display: flex;
+font-size: 20px;
+color: #999999;
+}
+.main-header__edit-btn{
+  color: #38eaf0;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 30px;
+  border: solid 1px #38eaf0;
+  right: 40px;
+  padding: 0 20px;
+}
+
+.messages{
+  height: calc(100vh - 190px - 93px);
+  padding: 46px 40px;
+  background-color: #fafafa;
+  overflow: scroll;
+}
+
+.form{
+  height: 50px;
+  background-color: #ddd;
+  padding: 20px 40px;
+  position: relative;
+  .input_box{
+    width: 100%;
+    .input_box__text {
+      height: 50px;
+      width: 80%;
+      padding: 0 40px 0 10px;
+      color: #434a54;
+      border-style: none;
+    }
+    .input_box__image{
+      position: absolute;
+      top: 33px;
+      right: 200px;
+    }
+  }
+
+  .file{
+  // overflow: hidden;
+  display: none;
+  }
+
+  .fa-image{
+    font-size:30px;
+  }
+
+
+
+  .submit-btn{
+  width: 100px;
+  height: 50px;
+  padding: 0 30px;
+  margin-left: 15px;
+  background-color: #38eaf0;
+  color: white;
+  cursor: pointer;
+  float: right;
+  // bottom: 25px;
+  }
+}

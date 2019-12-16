@@ -10,7 +10,6 @@ class MessagesController < ApplicationController
     @message = @group.messages.new(message_params)
     if @message.save
       respond_to do |format|
-        # group_messages_path(@group)は今いるグループのメッセージページに行きますよ
         format.html { redirect_to group_messages_path(@group), notice: "メッセージを送信しました" }
         format.json
       end

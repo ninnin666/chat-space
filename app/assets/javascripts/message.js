@@ -29,7 +29,6 @@ $(function(){
 
 
   function buildHTML(message){
-    console.log(message)
     if (message.image) {
       var html = 
     ` <div class="message" data-message-id = "${message.id}">

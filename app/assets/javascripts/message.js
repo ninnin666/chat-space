@@ -16,7 +16,6 @@ $(function(){
       $.each(messages, function(i, message) {
         insertHTML += buildHTML(message)
       });
-      console.log(insertHTML)
       $('.messages').append(insertHTML);
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
       $("#new_message")[0].reset();
@@ -24,7 +23,7 @@ $(function(){
       }
     })
     .fail(function() {
-      console.log('error');
+      alert('error');
     });
   };
 

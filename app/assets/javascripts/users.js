@@ -7,7 +7,6 @@ $(function(){
               <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}">追加</div>
           </div>`
           $('#user-search-result').append(html)
-          // console.log(html)
   }
 
   function errbuildHTML(user){
@@ -66,16 +65,3 @@ $(".js-add-user").on('click','.schat-group-user__btn--remove',function(){
 $(this).parent().remove();
   });
 });
-
-
-        // if(条件：ユーザーが空かどうか){
-        //   １つずつに分けて、
-        //   HTMLを組み立てるfunctionを呼び出す
-        // }else{
-        //  }let name = $(this).data("user-name");
-
-
-        // let name = $(this).data("user-name");
-        // let id = $(this).data("user-id");
-        // aaa(name,id)
-        // $(this).parent().remove();

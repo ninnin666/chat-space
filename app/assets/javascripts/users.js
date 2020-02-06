@@ -61,7 +61,7 @@ DeleteHTML(name,id);
 $(this).parent().remove();
   });
 
-$(".js-add-user").on('click','.schat-group-user__btn--remove',function(){
+$(document).on('click','.chat-group-user__btn--remove',function(){
 $(this).parent().remove();
   });
 });
